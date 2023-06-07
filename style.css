@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Anton', sans-serif;
+}
+
+.container {
+    padding: 25px 10%;
+    text-align: center;
+}
+
+.container .heading {
+    font-size: 30px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px orange;
+    
+}
+
+.container #search-box {
+    width: 600px;
+    border: 4px solid black;
+    padding: 12px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+.container .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.container .image-container .image {
+    padding: 15px;
+    background-color: aqua;
+    box-shadow: 2px 2px 5px 5px rgb(156, 154, 154);
+    border: 2px solid yellowgreen;
+    width: 350px;
+    border-radius: 10px;
+    animation: fadeIn .2s linear;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale3d(.5)translate(-10px);
+        opacity: 0;
+    }
+}
+
+.container .image-container .image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+.container .image-container .image img h3 {
+    font-size: 18px;
+}
+
+@media(max-width:768px) {
+    .container #search-box {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    .container .image-container .image {
+        width: 100%;
+    }
+}
